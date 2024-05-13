@@ -3,10 +3,10 @@
 ## Setup
 1. Update linux to get the "+" thingy.
 2. Connect camera to linux via powershell.
- - Open "cmd" and type "usbip list".
+ - Open "cmd" and type "usbipd list".
  - Find the BUSID of the webcam.
  - usbipd attach --wsl --busid=<BUSID>
- - "usbip list" should now say "Attached".
+ - "usbipd list" should now say "Attached".
  - Open linux and type "sudo chmod 777 /dev/video0".
 4. Make an enviroment and install requirements.
 
