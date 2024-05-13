@@ -174,8 +174,8 @@ while capture.isOpened() and timer > 0:
 	cv2.imshow("Facial and Hand Landmarks", image)
 
 	# Enter key 'q' to break the loop
-	if cv2.waitKey(5) & 0xFF == ord('q'):
-		break
+	# if cv2.waitKey(5) & 0xFF == ord('q'):
+	# 	break
 
 # When all the process is done
 # Release the capture and destroy all windows
