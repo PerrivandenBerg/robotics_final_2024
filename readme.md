@@ -25,3 +25,18 @@ your fingers bit by bit.
 
 ## Notes
 - The software right now only detects the right hand gestures.
+
+
+# Port forwarding for websockets
+Add this to your ssh config for the robot:
+```
+LocalForward 8765 localhost:8765 
+```
+
+Complete example:
+```
+Host robot
+    HostName 10.42.0.1
+    User pi
+    LocalForward 8765 localhost:8765 
+```
