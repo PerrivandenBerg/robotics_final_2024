@@ -3,7 +3,12 @@
 ## Setup
 1. Update linux to get the "+" thingy.
 2. Connect camera to linux via powershell.
-3. Make an enviroment and install requirements.
+ - Open "cmd" and type "usbip list".
+ - Find the BUSID of the webcam.
+ - usbipd attach --wsl --busid=<BUSID>
+ - "usbip list" should now say "Attached".
+ - Open linux and type "sudo chmod 777 /dev/video0".
+4. Make an enviroment and install requirements.
 
 ## How to record?
 1. Have a hand gesture ready infront of your camera.
