@@ -18,7 +18,7 @@ class RobotWebSocketConnection:
         print('Sending command', command)
         try:
             self.ws.send_text(command)
-        except:
+        except Exception as e:
             print('error:', e, type(e))
 
 
