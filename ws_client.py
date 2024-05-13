@@ -16,7 +16,10 @@ class RobotWebSocketConnection:
     # Where command is one of: 'forward', 'backward', 'stop', 'left', or 'right'
     def send_command(self, command: str):
         print('Sending command', command)
-        self.ws.send_text(command)
+        try:
+            self.ws.send_text(command)
+        except:
+            print('error:', e, type(e))
 
 
 if __name__ == '__main__':
