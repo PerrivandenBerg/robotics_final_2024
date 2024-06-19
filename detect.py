@@ -155,7 +155,7 @@ while capture.isOpened():
 			best_gesture = sorted(gest_percent, key = lambda x: x[3], reverse=True)[0]
 
 			if best_gesture[3] > 85:
-				print(best_gesture[0], "(", best_gesture[1], ")")
+				print(best_gesture[0])
 				new_command = best_gesture[2]
 			else:
 				print("no gesture recognized...")
