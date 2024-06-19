@@ -32,9 +32,6 @@ gesture.append({"who": "lochyin", "cmd": "right"	, "name": "point_right"	, "min"
 gesture.append({"who": "lochyin", "cmd": "left"		, "name": "point_left"	, "min":  [np.array([1.00000, 0.00000, 0.00000]), np.array([1.00000, 0.00000, 0.00000]), np.array([0.79703, 0.00000, 0.00000]), np.array([1.00000, 0.00000, 0.00000]), np.array([1.00000, 0.00000, 0.00000]), np.array([0.41210, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.03540, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.00000, 0.00000])] , "max":  [np.array([1.00000, 0.27655, 0.91109]), np.array([1.00000, 0.71412, 0.72551]), np.array([1.00000, 0.45389, 1.00000]), np.array([1.00000, 0.09161, 0.76266]), np.array([1.00000, 0.68668, 0.70316]), np.array([1.00000, 1.00000, 0.83955]), np.array([1.00000, 1.00000, 0.21937]), np.array([1.00000, 1.00000, 0.73263]), np.array([1.00000, 1.00000, 0.38785]), np.array([1.00000, 1.00000, 0.38772]), np.array([1.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 0.80724]), np.array([1.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 0.91952]), np.array([1.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 1.00000])] })
 gesture.append({"who": "lochyin", "cmd": "shake"	, "name": "thumbs_down"	, "min":  [np.array([0.70173, 0.00000, 0.00000]), np.array([1.00000, 0.00000, 0.00000]), np.array([0.22375, 0.43271, 0.00000]), np.array([0.31051, 0.29659, 0.00000]), np.array([0.39314, 0.18252, 0.00000]), np.array([0.17857, 0.00000, 0.00000]), np.array([0.00000, 0.31492, 0.00000]), np.array([0.39299, 0.00000, 0.68588]), np.array([0.00000, 0.21279, 0.00000]), np.array([0.00000, 0.00000, 0.00000]), np.array([0.00000, 0.35530, 0.00000]), np.array([0.00000, 0.00000, 0.69567]), np.array([0.00000, 0.41596, 0.19289]), np.array([0.00000, 0.00000, 0.33360]), np.array([0.00000, 0.31432, 0.00000]), np.array([0.00000, 0.00000, 0.74461]), np.array([0.00000, 0.51945, 0.29974]), np.array([0.00000, 0.00000, 0.56213]), np.array([0.00000, 0.13244, 0.00000]), np.array([0.00000, 0.61560, 0.21936]), np.array([0.00000, 0.00000, 0.51039])] , "max":  [np.array([1.00000, 1.00000, 0.29229]), np.array([1.00000, 0.08174, 0.57419]), np.array([1.00000, 1.00000, 0.00000]), np.array([1.00000, 1.00000, 0.00000]), np.array([1.00000, 1.00000, 0.00000]), np.array([1.00000, 1.00000, 0.32857]), np.array([1.00000, 1.00000, 0.30740]), np.array([1.00000, 0.00000, 1.00000]), np.array([0.29078, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 0.43586]), np.array([1.00000, 0.42165, 1.00000]), np.array([0.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 0.38344]), np.array([1.00000, 0.85027, 1.00000]), np.array([0.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 0.48763]), np.array([0.00000, 1.00000, 1.00000]), np.array([1.00000, 1.00000, 1.00000])] })
 
-# TODO Add more gestures
-
-
 # Grabbing the Holistic Model from Mediapipe and
 # Initializing the Model
 mp_holistic = mp.solutions.holistic
@@ -127,7 +124,7 @@ while capture.isOpened():
 						norm_vectors.append(data_norm)
 
 
-	# TODO detect a hand gesture and return the right action / name.
+	# Detect a hand gesture and return the right action / name.
 
 		gest_percent = []
 
@@ -142,15 +139,10 @@ while capture.isOpened():
 									if i["max"][j][2] >= norm_vectors[j][2]:
 										matching = matching + 1
 
-			# if matching == 21:
-			# 	print(i["name"], "(", i["who"], ")", ": ", round((matching/21*100), 1), "%  <<< ")
-			# else:
-			# 	print(i["name"], "(", i["who"], ")", ": ", round((matching/21*100), 1), "%")
-
-
 			gest_percent.append([ i["name"], i["who"], i["cmd"], matching/21*100])
 
 
+		# Find the best fit.
 		if gest_percent:
 			best_gesture = sorted(gest_percent, key = lambda x: x[3], reverse=True)[0]
 
@@ -187,7 +179,7 @@ while capture.isOpened():
 	cv2.putText(image, str(int(fps))+" FPS", (10, 70), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
 
 	# Display the resulting image
-	cv2.imshow("Facial and Hand Landmarks", image)
+	cv2.imshow("Hand Landmarks", image)
 
 	# Enter key 'q' to break the loop
 	if cv2.waitKey(5) & 0xFF == ord('q'):
