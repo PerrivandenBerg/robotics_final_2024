@@ -1,7 +1,8 @@
 # Robotics Final Assignment
 
 ## Setup
-1. Update linux to get the "+" thingy.
+### Windows PC with WSL
+1. Update linux to get the "+" from the following: https://askubuntu.com/questions/1405903/capturing-webcam-video-with-opencv-in-wsl2
 2. Connect camera to linux via powershell.
  - Open "cmd" and type "usbipd list".
  - Find the BUSID of the webcam.
@@ -9,6 +10,8 @@
  - "usbipd list" should now say "Attached".
  - Open linux and type "sudo chmod 777 /dev/video0".
 4. Make an enviroment and install requirements.
+### Robot
+1. Copy ws_server.py to the robot and run on the robot when running detect.py on the Windows PC.
 
 ## How to record?
 1. Have a hand gesture ready infront of your camera.
