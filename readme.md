@@ -13,17 +13,18 @@
 ### Robot
 1. Copy ws_server.py to the robot and run on the robot when running detect.py on the Windows PC.
 
-## How to record?
+## How to record gestures
 1. Have a hand gesture ready infront of your camera.
 2. Run the record.py file.
 3. Hold the gesture infront of the camera while moving it around and tweaking
-your fingers bit by bit.
+your fingers bit by bit. (The program will take an average of the whole measurement)
 4. After ~10s the program stops and outputs the gesture configuration.
-5. Copy paste this into the detect.py file, and fill in the TODO at the end.
+5. Copy paste the output into the detect.py file, and add to the gesture list. Examples for gestures are already present in the file.
 
-## How to detect?
-1. Run the detect.py file.
-2. Make a gesture (out of the list) and it should work accordingly.
+## How to detect
+0. Make sure to connect to the robot via wifi.
+1. Run the detect.py file on the PC and run ws_server.py on the robot.
+2. Make a gesture (out of the list in detect.py) and it should work accordingly.
 3. Press 'q' or '^C' to exit.
 
 ## Notes
